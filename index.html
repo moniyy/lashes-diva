@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Курс „Наращивание ресниц с 0“ — LASHES DIVA, Ижевск</title>
+<meta name="description" content="Курс „Наращивание ресниц с 0“ в студии LASHES DIVA, Ижевск. От первого касания до первых платных клиентов. Все материалы и инструменты предоставляются, онлайн-курс по портфолио входит в обучение, возможность работать в студии после курса. 25 000 ₽. Ижевск, ул. Карла Маркса, 2.">
+<meta name="theme-color" content="#0a0a0a">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Курс „Наращивание ресниц с 0“ — LASHES DIVA, Ижевск">
+<meta property="og:description" content="От первого касания до первых платных клиентов. Все материалы и инструменты предоставляются, онлайн-курс по портфолио входит в обучение, возможность работать в студии после курса. 25 000 ₽. Ижевск, ул. Карла Маркса, 2.">
+<meta property="og:image" content="img/hero.jpg">
+<meta property="og:image:alt" content="Студия наращивания ресниц LASHES DIVA, Ижевск">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="LASHES DIVA">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Курс „Наращивание ресниц с 0“ — LASHES DIVA, Ижевск">
+<meta name="twitter:description" content="От первого касания до первых платных клиентов. Ижевск, ул. Карла Маркса, 2.">
+<meta name="twitter:image" content="img/hero.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* ============ tokens ============ */
+:root{
+  --bg:#0a0a0a;
+  --bg-2:#141414;
+  --accent:#c9a227;
+  --accent-2:#e8c860;
+  --text:#ffffff;
+  --muted:#cfc6b6;
+  --muted-dim:#9a9081;
+  --line:rgba(255,255,255,.09);
+  --line-hi:rgba(232,200,96,.45);
+  --card:rgba(255,255,255,.04);
+  --card-2:rgba(255,255,255,.015);
+  --r:18px;
+  --r-sm:14px;
+  --ease:cubic-bezier(.16,1,.3,1);
+  --pad:20px;
+  --maxw:1100px;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+html,body{overflow-x:hidden;max-width:100%}
+body{
+  margin:0;
+  background:var(--bg);
+  background-image:
+    radial-gradient(1100px 700px at 85% -8%, rgba(201,162,39,.20), transparent 60%),
+    radial-gradient(800px 600px at 0% 42%, rgba(201,162,39,.10), transparent 62%),
+    linear-gradient(178deg, #0a0a0a 0%, #101010 38%, #141414 68%, #0c0c0c 100%);
+  background-attachment:scroll;
+  color:var(--text);
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;
+  font-size:16px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+img{max-width:100%;display:block;border:0}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit}
+
+::selection{background:var(--accent);color:#0a0a0a}
+
+/* единый контейнер: одна левая линия для всех секций */
+.wrap{
+  width:100%;
+  max-width:var(--maxw);
+  margin:0 auto;
+  padding-left:var(--pad);
+  padding-right:var(--pad);
+  box-sizing:border-box;
+}
+
+/* ============ typography ============ */
+h1,h2,h3,.font-display{
+  font-family:'Unbounded','Inter',sans-serif;
+  font-weight:700;
+  letter-spacing:-.03em;
+  line-height:1.08;
+  margin:0;
+}
+.accent{color:var(--accent-2)}
+
+.eyebrow{
+  font-family:'Inter',sans-serif;
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  color:var(--accent-2);
+  margin:0 0 16px;
+}
+
+h1{font-size:clamp(27px,7.2vw,54px);font-weight:800}
+h2{font-size:clamp(23px,5.6vw,40px)}
+
+.sec-head{margin-bottom:26px}
+.sec-head p{
+  color:var(--muted);
+  font-size:15px;
+  margin:12px 0 0;
+  max-width:56ch;
+}
+
+section{padding:40px 0}
+
+/* ============ hero ============ */
+.hero{
+  position:relative;
+  padding:28px 0 44px;
+  text-align:center;
+  overflow:hidden;
+}
+.hero::before{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:-30%;
+  width:min(1000px,150%);
+  aspect-ratio:1/1;
+  transform:translateX(-50%) scale(1);
+  background:radial-gradient(circle at 50% 50%, rgba(201,162,39,.30) 0%, rgba(232,200,96,.12) 34%, rgba(201,162,39,0) 66%);
+  pointer-events:none;
+  z-index:0;
+  animation:breathe 8s ease-in-out infinite;
+  will-change:transform;
+}
+@keyframes breathe{
+  0%,100%{transform:translateX(-50%) scale(1)}
+  50%{transform:translateX(-50%) scale(1.08)}
+}
+.hero-body{position:relative;z-index:1;max-width:860px;margin:0 auto}
+.hero-sub{
+  color:var(--muted);
+  font-size:clamp(15px,4vw,19px);
+  margin:18px auto 0;
+  max-width:44ch;
+}
+
+/* баннер студии */
+.banner{position:relative;z-index:1;padding-bottom:30px}
+.banner-frame{
+  width:100%;
+  border-radius:16px;
+  overflow:hidden;
+  border:1px solid var(--line);
+  box-shadow:0 30px 70px -34px rgba(201,162,39,.75);
+  line-height:0;
+}
+.banner-frame img{width:100%;max-width:100%;height:auto}
+
+.marks{
+  list-style:none;
+  margin:26px 0 0;
+  padding:0;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:8px;
+}
+.marks li{
+  font-size:13px;
+  font-weight:500;
+  color:var(--muted);
+  border:1px solid var(--line);
+  background:var(--card);
+  border-radius:999px;
+  padding:9px 15px;
+  white-space:normal;
+}
+@media (max-width:599px){
+  .marks{flex-direction:column;align-items:stretch;gap:10px}
+  .marks li{
+    width:100%;
+    padding:12px 15px;
+    text-align:center;
+  }
+}
+
+.price-box{
+  margin-top:30px;
+  display:flex;
+  align-items:baseline;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:10px 14px;
+}
+.price-now{
+  font-family:'Unbounded',sans-serif;
+  font-weight:800;
+  font-size:clamp(34px,10vw,58px);
+  letter-spacing:-.045em;
+  line-height:1;
+  background:linear-gradient(100deg,#fff 20%,var(--accent-2) 96%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+}
+
+/* ============ buttons ============ */
+.btn{
+  position:relative;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  min-height:54px;
+  padding:15px 30px;
+  border-radius:999px;
+  border:0;
+  font-family:'Unbounded',sans-serif;
+  font-size:15px;
+  font-weight:600;
+  letter-spacing:-.01em;
+  cursor:pointer;
+  text-align:center;
+  color:#100d05;
+  background:linear-gradient(135deg,var(--accent) 0%,var(--accent-2) 100%);
+  box-shadow:0 10px 30px -10px rgba(201,162,39,.85);
+  transition:transform .2s var(--ease),box-shadow .2s var(--ease),filter .2s var(--ease);
+  -webkit-tap-highlight-color:transparent;
+}
+/* до 600px — на всю ширину контейнера, дальше по содержимому и по левому краю */
+.btn--wide{width:100%;max-width:none}
+@media (min-width:600px){
+  .btn--wide{width:auto;min-width:300px}
+}
+/* главная кнопка записи: вся ширина на мобильном, половина контейнера на десктопе */
+.btn--half{width:100%;min-height:60px;padding:17px 32px;font-size:16px}
+@media (min-width:700px){
+  .btn--half{width:50%;min-width:340px;font-size:17px}
+}
+.btn:active{transform:scale(.97)}
+
+/* деликатная пульсация свечения главной кнопки — анимируется только opacity */
+.btn--pulse::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:inherit;
+  pointer-events:none;
+  box-shadow:0 0 34px 2px rgba(232,200,96,.75);
+  opacity:.3;
+  animation:pulseGlow 3s ease-in-out infinite;
+  will-change:opacity;
+}
+@keyframes pulseGlow{
+  0%,100%{opacity:.28}
+  50%{opacity:.8}
+}
+
+.btn-ghost{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  min-height:64px;
+  padding:14px 20px;
+  border-radius:var(--r);
+  border:1px solid var(--line);
+  background:linear-gradient(160deg,var(--card),var(--card-2));
+  transition:transform .2s var(--ease),border-color .2s var(--ease),box-shadow .2s var(--ease);
+  -webkit-tap-highlight-color:transparent;
+}
+.btn-ghost:active{transform:scale(.985)}
+.btn-ghost .bg-label{
+  display:block;
+  font-size:12px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--muted-dim);
+  line-height:1.4;
+}
+.btn-ghost .bg-value{
+  display:block;
+  font-family:'Unbounded',sans-serif;
+  font-size:clamp(15px,4.2vw,18px);
+  font-weight:600;
+  letter-spacing:-.02em;
+  line-height:1.3;
+  word-break:break-word;
+}
+.btn-ghost .ico{
+  flex:0 0 42px;
+  width:42px;height:42px;
+  display:grid;place-items:center;
+  border-radius:12px;
+  background:linear-gradient(135deg,rgba(201,162,39,.30),rgba(232,200,96,.14));
+  border:1px solid rgba(232,200,96,.28);
+}
+.btn-ghost .ico svg{width:19px;height:19px;stroke:var(--accent-2);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+
+@media (hover:hover){
+  .btn:hover{transform:translateY(-2px);box-shadow:0 18px 44px -12px rgba(232,200,96,.9);filter:brightness(1.06)}
+  .btn-ghost:hover{transform:translateY(-2px);border-color:var(--line-hi);box-shadow:0 16px 40px -18px rgba(201,162,39,.9)}
+  .tg-line a:hover{color:var(--accent-2);text-decoration-color:var(--accent-2)}
+}
+
+/* ============ cards ============ */
+.grid{
+  display:grid;
+  gap:14px;
+  width:100%;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  list-style:none;
+  justify-items:stretch;
+  align-items:stretch;
+  text-align:left;
+}
+.card{
+  position:relative;
+  border:1px solid var(--line);
+  background:linear-gradient(160deg,var(--card),var(--card-2));
+  border-radius:var(--r);
+  padding:22px;
+  transition:transform .25s var(--ease),border-color .25s var(--ease),box-shadow .25s var(--ease);
+}
+@media (hover:hover){
+  .card:hover{transform:translateY(-4px);border-color:var(--line-hi);box-shadow:0 20px 46px -22px rgba(201,162,39,.9)}
+}
+
+/* для кого этот курс */
+.fit-grid{grid-template-columns:1fr}
+.fit-card .num{
+  font-family:'Unbounded',sans-serif;
+  font-size:13px;
+  font-weight:700;
+  color:var(--accent-2);
+  letter-spacing:.06em;
+  display:block;
+  margin-bottom:12px;
+}
+.fit-card p{margin:0;font-size:16px;line-height:1.5;font-weight:500}
+
+/* ============ как проходит обучение — таймлайн ============ */
+.tl{position:relative}
+/* линия прорисовывается сверху вниз — анимируется только transform */
+.tl::before{
+  content:"";
+  position:absolute;
+  left:7px;top:6px;bottom:6px;
+  width:1px;
+  background:linear-gradient(180deg,rgba(232,200,96,.55),rgba(255,255,255,.10));
+  transform:scaleY(0);
+  transform-origin:top center;
+  transition:transform 1.4s var(--ease);
+  will-change:transform;
+}
+.tl.draw::before{transform:scaleY(1)}
+
+.tl-item{position:relative;padding:0 0 26px 30px}
+.tl-item:last-child{padding-bottom:0}
+/* погашенная точка */
+.tl-item::before{
+  content:"";
+  position:absolute;
+  left:0;top:22px;
+  width:15px;height:15px;
+  border-radius:50%;
+  background:#161616;
+  border:1px solid rgba(255,255,255,.22);
+}
+/* свечение поверх — загорается, когда линия дошла */
+.tl-item::after{
+  content:"";
+  position:absolute;
+  left:0;top:22px;
+  width:15px;height:15px;
+  border-radius:50%;
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  box-shadow:0 0 0 5px rgba(201,162,39,.16),0 0 18px rgba(232,200,96,.65);
+  opacity:0;
+  transform:scale(.5);
+  transition:opacity .45s var(--ease),transform .45s var(--ease);
+  will-change:opacity,transform;
+}
+.tl.draw .tl-item::after{opacity:1;transform:scale(1)}
+.tl.draw .tl-item:nth-child(1)::after{transition-delay:.10s}
+.tl.draw .tl-item:nth-child(2)::after{transition-delay:.45s}
+.tl.draw .tl-item:nth-child(3)::after{transition-delay:.80s}
+.tl.draw .tl-item:nth-child(4)::after{transition-delay:1.15s}
+.tl-item h3{
+  font-size:clamp(17px,4.6vw,21px);
+  margin-bottom:8px;
+}
+.tl-item p{margin:0;color:var(--muted);font-size:15px;line-height:1.55}
+
+/* ============ как это выглядит — сетка фото ============ */
+/* фото не режем по высоте: на них есть свои надписи, карточка тянется под картинку */
+.shots-grid{grid-template-columns:1fr 1fr;gap:11px;align-items:start}
+.shot{
+  border:1px solid var(--line);
+  border-radius:var(--r-sm);
+  overflow:hidden;
+  padding:0;
+  background:none;
+  cursor:zoom-in;
+  display:block;
+  width:100%;
+  line-height:0;
+  transition:border-color .2s var(--ease),box-shadow .2s var(--ease);
+  -webkit-tap-highlight-color:transparent;
+}
+.shot img{
+  width:100%;
+  height:auto;
+  object-fit:contain;
+}
+@media (hover:hover){
+  .shot:hover{border-color:var(--line-hi);box-shadow:0 18px 40px -22px rgba(201,162,39,.9)}
+}
+
+.note-line{
+  display:inline-block;
+  margin:24px 0 0;
+  font-size:13px;
+  color:var(--accent-2);
+  border:1px dashed rgba(232,200,96,.35);
+  border-radius:10px;
+  padding:8px 14px;
+  line-height:1.45;
+}
+
+/* ============ чему научишься ============ */
+.skills{grid-template-columns:1fr;gap:10px}
+.skills li{
+  position:relative;
+  display:flex;
+  align-items:flex-start;
+  gap:12px;
+  border:1px solid var(--line);
+  background:linear-gradient(160deg,var(--card),var(--card-2));
+  border-radius:var(--r-sm);
+  padding:13px 16px;
+  font-size:15px;
+  line-height:1.45;
+  color:var(--muted);
+  transition:border-color .25s var(--ease),transform .25s var(--ease);
+}
+.skills li::before{
+  content:"";
+  flex:0 0 7px;
+  width:7px;height:7px;
+  margin-top:8px;
+  border-radius:50%;
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  box-shadow:0 0 8px rgba(232,200,96,.55);
+}
+@media (hover:hover){.skills li:hover{border-color:var(--line-hi);transform:translateY(-3px)}}
+
+/* ============ не только про ресницы ============ */
+/* список — тот же ul, поэтому явно гасим браузерный padding-inline-start */
+.incl{
+  grid-template-columns:1fr;
+  gap:12px;
+  width:100%;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  list-style:none;
+  justify-items:stretch;
+  align-items:stretch;
+}
+.incl li{margin:0;width:100%;box-sizing:border-box}
+.incl li{
+  list-style:none;
+  display:flex;
+  align-items:center;
+  gap:14px;
+  border:1px solid var(--line);
+  background:linear-gradient(160deg,var(--card),var(--card-2));
+  border-radius:var(--r);
+  padding:18px 20px;
+  font-size:16px;
+  font-weight:500;
+  transition:border-color .25s var(--ease),transform .25s var(--ease);
+}
+@media (hover:hover){.incl li:hover{border-color:var(--line-hi);transform:translateY(-4px)}}
+.check{
+  flex:0 0 30px;width:30px;height:30px;
+  display:grid;place-items:center;
+  border-radius:50%;
+  background:linear-gradient(135deg,rgba(201,162,39,.32),rgba(232,200,96,.16));
+  border:1px solid rgba(232,200,96,.35);
+}
+.check svg{width:15px;height:15px;fill:none;stroke:var(--accent-2);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.cta-row{margin-top:28px}
+
+/* ============ тарифы ============ */
+.tariffs{grid-template-columns:1fr;gap:14px}
+.tariff{display:flex;flex-direction:column;padding:24px}
+.tariff h3{font-size:clamp(19px,5vw,24px);margin-bottom:14px}
+.tariff-price{
+  font-family:'Unbounded',sans-serif;
+  font-weight:800;
+  font-size:clamp(26px,7vw,36px);
+  letter-spacing:-.04em;
+  line-height:1.05;
+  background:linear-gradient(100deg,#fff 20%,var(--accent-2) 96%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+  display:block;
+}
+.tariff-price--ask{
+  font-size:clamp(19px,5vw,24px);
+  letter-spacing:-.02em;
+}
+.tariff-note{
+  margin:16px 0 0;
+  color:var(--muted);
+  font-size:15px;
+  line-height:1.5;
+}
+.tariff-list{
+  margin:12px 0 0;
+  padding:0;
+  list-style:none;
+  display:grid;
+  gap:9px;
+}
+.tariff-list li{
+  position:relative;
+  padding-left:18px;
+  font-size:15px;
+  line-height:1.45;
+  color:var(--muted);
+}
+.tariff-list li::before{
+  content:"";
+  position:absolute;
+  left:0;top:8px;
+  width:6px;height:6px;
+  border-radius:50%;
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  box-shadow:0 0 8px rgba(232,200,96,.55);
+}
+
+/* ============ отзыв ============ */
+.rev-solo{
+  margin:0;
+  padding:26px 22px;
+  border:1px solid var(--line);
+  border-radius:20px;
+  background:linear-gradient(160deg,var(--card),var(--card-2));
+  text-align:center;
+  transition:border-color .25s var(--ease),box-shadow .25s var(--ease);
+}
+@media (hover:hover){
+  .rev-solo:hover{border-color:var(--line-hi);box-shadow:0 20px 46px -24px rgba(201,162,39,.9)}
+}
+.rev-mark{
+  display:block;
+  font-family:'Unbounded',sans-serif;
+  font-weight:700;
+  font-size:clamp(52px,13vw,76px);
+  line-height:.7;
+  color:var(--accent);
+  opacity:.5;
+  margin-bottom:20px;
+  user-select:none;
+}
+.rev-quote{margin:0}
+.rev-quote p{
+  margin:0 auto;
+  max-width:64ch;
+  font-size:clamp(18px,4.6vw,19px);
+  line-height:1.7;
+  color:#e6ddcd;
+}
+.rev-author{
+  margin:26px auto 0;
+  padding-top:20px;
+  border-top:1px solid var(--line);
+  max-width:64ch;
+}
+.rev-name{
+  display:block;
+  font-size:17px;
+  font-weight:700;
+  color:#fff;
+  line-height:1.35;
+}
+.rev-course{
+  display:block;
+  margin-top:5px;
+  font-size:14px;
+  color:var(--muted-dim);
+  line-height:1.4;
+}
+
+/* ============ работы ============ */
+/* карточки одного размера, верхние края на одной линии */
+.works-grid{grid-template-columns:1fr;gap:11px;align-items:start}
+.work{
+  border:1px solid var(--line);
+  border-radius:var(--r-sm);
+  overflow:hidden;
+  padding:0;
+  background:none;
+  cursor:zoom-in;
+  display:block;
+  width:100%;
+  transition:border-color .2s var(--ease);
+  -webkit-tap-highlight-color:transparent;
+}
+.work img{
+  width:100%;
+  height:auto;
+  aspect-ratio:3/4;
+  object-fit:cover;
+  /* кроп идёт сверху: подписи в верхней части фото уходят целиком */
+  object-position:center bottom;
+  transition:transform .4s var(--ease);
+}
+@media (hover:hover){
+  .work:hover{border-color:var(--line-hi)}
+  .work:hover img{transform:scale(1.06)}
+}
+
+/* ============ другие направления ============ */
+.courses{grid-template-columns:1fr;gap:10px}
+.course{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  border:1px solid var(--line);
+  background:linear-gradient(160deg,var(--card),var(--card-2));
+  border-radius:var(--r-sm);
+  padding:16px 18px;
+  transition:border-color .25s var(--ease),transform .25s var(--ease);
+}
+@media (hover:hover){.course:hover{border-color:var(--line-hi);transform:translateY(-4px)}}
+.course-body{min-width:0}
+.course-name{display:block;font-size:15px;font-weight:500;line-height:1.35}
+.course-note{
+  display:block;
+  margin-top:4px;
+  font-size:13px;
+  color:var(--muted-dim);
+  line-height:1.4;
+}
+.course-price{text-align:right;flex:0 0 auto}
+.course-price b{
+  display:block;
+  font-family:'Unbounded',sans-serif;
+  font-size:15px;
+  font-weight:700;
+  letter-spacing:-.02em;
+  color:var(--accent-2);
+  white-space:nowrap;
+}
+.course-price .ask{
+  display:block;
+  font-size:13px;
+  font-weight:500;
+  color:var(--muted-dim);
+  line-height:1.4;
+}
+
+/* ============ контакты ============ */
+/* единственная кнопка записи стоит по центру блока */
+.zapis-cta{text-align:center}
+/* телеграм-канал — обычная текстовая ссылка, не способ записи */
+.tg-line{
+  margin:16px 0 0;
+  font-size:14px;
+  color:var(--muted-dim);
+}
+.tg-line a{
+  color:var(--muted);
+  text-decoration:underline;
+  text-decoration-thickness:1px;
+  text-underline-offset:3px;
+  text-decoration-color:rgba(232,200,96,.4);
+  transition:color .2s var(--ease),text-decoration-color .2s var(--ease);
+}
+.addr{
+  margin:22px 0 0;
+  font-size:15px;
+  color:var(--muted);
+}
+.addr b{color:#fff;font-weight:600}
+
+/* ============ footer ============ */
+footer{
+  border-top:1px solid var(--line);
+  padding:34px 0 44px;
+  margin-top:20px;
+}
+.f-logo{
+  font-family:'Unbounded',sans-serif;
+  font-weight:700;
+  letter-spacing:.16em;
+  font-size:15px;
+}
+.f-meta{margin:10px 0 0;color:var(--muted-dim);font-size:14px;line-height:1.7}
+
+/* ============ плавающая кнопка записи (только мобильные) ============ */
+.fab{
+  display:none;
+  position:fixed;
+  left:var(--pad);
+  right:var(--pad);
+  bottom:calc(14px + env(safe-area-inset-bottom));
+  z-index:60;
+  transform:translateY(140%);
+  opacity:0;
+  visibility:hidden;
+  transition:transform .3s var(--ease),opacity .3s var(--ease),visibility 0s linear .3s;
+}
+.fab.show{
+  transform:none;
+  opacity:1;
+  visibility:visible;
+  transition:transform .3s var(--ease),opacity .3s var(--ease),visibility 0s linear 0s;
+}
+.fab .btn{
+  width:100%;
+  min-width:0;
+  box-shadow:0 14px 36px -8px rgba(201,162,39,.95);
+}
+@media (max-width:699px){.fab{display:block}}
+
+/* ============ lightbox ============ */
+.lb{
+  position:fixed;
+  inset:0;
+  z-index:100;
+  background:rgba(5,5,5,.95);
+  backdrop-filter:blur(6px);
+  -webkit-backdrop-filter:blur(6px);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:16px;
+  opacity:0;
+  pointer-events:none;
+  transition:opacity .22s var(--ease);
+}
+.lb[data-open="1"]{opacity:1;pointer-events:auto}
+.lb img{
+  max-width:100%;
+  max-height:100%;
+  width:auto;
+  border-radius:12px;
+  box-shadow:0 30px 80px -20px rgba(0,0,0,.9);
+}
+.lb-close{
+  position:absolute;
+  top:calc(12px + env(safe-area-inset-top));
+  right:12px;
+  width:46px;height:46px;
+  display:grid;place-items:center;
+  border-radius:50%;
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.06);
+  cursor:pointer;
+  transition:background .2s var(--ease),transform .2s var(--ease);
+}
+.lb-close svg{width:18px;height:18px;stroke:#fff;stroke-width:2;stroke-linecap:round;fill:none}
+@media (hover:hover){.lb-close:hover{background:rgba(201,162,39,.55);transform:scale(1.06)}}
+body.lb-open{overflow:hidden}
+
+/* ============ анимации ============ */
+/* появление при прокрутке: 24px снизу, 700ms, срабатывает один раз */
+.reveal{
+  opacity:0;
+  transform:translateY(24px);
+  transition:opacity .7s var(--ease),transform .7s var(--ease);
+}
+.reveal.in{opacity:1;transform:none}
+
+/* первый экран: каскад по 100ms */
+@keyframes riseIn{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+@keyframes riseScale{
+  from{opacity:0;transform:translateY(24px) scale(.94)}
+  to{opacity:1;transform:none}
+}
+.hero-anim{opacity:0;animation:riseIn .7s var(--ease) forwards}
+.hero-anim--price{animation-name:riseScale}
+.d1{animation-delay:.1s}
+.d2{animation-delay:.2s}
+.d3{animation-delay:.3s}
+.d4{animation-delay:.4s}
+.d5{animation-delay:.5s}
+.d6{animation-delay:.6s}
+.d7{animation-delay:.7s}
+
+/* ============ desktop ============ */
+@media (min-width:700px){
+  :root{--pad:40px}
+  section{padding:52px 0}
+  .hero{padding:40px 0 56px}
+  .banner{padding-bottom:38px}
+  .sec-head{margin-bottom:36px}
+  .grid{gap:16px}
+  .fit-grid{grid-template-columns:1fr 1fr}
+  .fit-card{padding:28px}
+  .skills{grid-template-columns:1fr 1fr}
+  .incl{grid-template-columns:1fr 1fr}
+  .tariffs{grid-template-columns:1fr 1fr;gap:16px}
+  .tariff{padding:30px}
+  .works-grid{grid-template-columns:repeat(3,1fr);gap:16px}
+  .shots-grid{grid-template-columns:repeat(4,1fr);gap:16px}
+  .courses{grid-template-columns:1fr 1fr}
+
+  .tl::before{left:9px}
+  .tl-item::before,.tl-item::after{left:0;width:19px;height:19px}
+  .tl-item{padding:0 0 34px 38px}
+
+  .rev-solo{padding:40px 30px}
+}
+@media (min-width:960px){
+  .marks li{font-size:14px;padding:10px 18px}
+}
+
+/* ============ reduced motion ============ */
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{
+    animation-duration:.001ms!important;
+    animation-delay:0ms!important;
+    animation-iteration-count:1!important;
+    transition-duration:.001ms!important;
+    transition-delay:0ms!important;
+  }
+  .reveal{opacity:1;transform:none}
+  .hero-anim{opacity:1}
+  .work img{transform:none!important}
+  .hero::before{animation:none!important;transform:translateX(-50%)!important}
+  .btn--pulse::after{animation:none!important;opacity:.35!important}
+  .tl::before{transform:scaleY(1)!important}
+  .tl-item::after{opacity:1!important;transform:none!important}
+  .btn:hover,.btn-ghost:hover,.card:hover,.incl li:hover,.skills li:hover,
+  .course:hover,.work:hover img{transform:none!important}
+  /* плавающая кнопка появляется сразу, без выезда */
+  .fab{transform:none!important;transition:none!important}
+  .fab:not(.show){opacity:0!important;visibility:hidden!important}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap banner">
+    <div class="banner-frame hero-anim d1">
+      <img src="img/hero.jpg" width="1351" height="410" fetchpriority="high"
+           alt="Студия наращивания ресниц LASHES DIVA, Ижевск">
+    </div>
+  </div>
+
+  <div class="wrap hero-body">
+    <p class="eyebrow hero-anim d2">LASHES DIVA · Ижевск</p>
+
+    <h1 class="hero-anim d3">Курс <span class="accent">„Наращивание ресниц с 0“</span></h1>
+
+    <p class="hero-sub hero-anim d4">От первого касания до первых платных клиентов</p>
+
+    <ul class="marks hero-anim d5">
+      <li>Все материалы и инструменты предоставляются</li>
+      <li>Онлайн-курс по портфолио входит в обучение</li>
+      <li>Возможность работать в студии после курса</li>
+    </ul>
+
+    <div class="price-box hero-anim hero-anim--price d6">
+      <span class="price-now">25&nbsp;000&nbsp;₽</span>
+    </div>
+
+    <p class="cta-row hero-anim d7" style="margin-top:26px">
+      <a class="btn btn--pulse btn--wide" href="#zapis">Записаться на курс</a>
+    </p>
+  </div>
+</header>
+
+<main>
+
+<!-- ================= для кого этот курс ================= -->
+<section id="komu">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Для кого этот курс</p>
+      <h2>Курс для тебя,&nbsp;<span class="accent">если это про тебя</span></h2>
+    </div>
+
+    <div class="grid fit-grid" data-stagger>
+      <article class="card fit-card">
+        <span class="num">01</span>
+        <p>Хочешь изменить свою жизнь и уйти с нелюбимой работы</p>
+      </article>
+      <article class="card fit-card">
+        <span class="num">02</span>
+        <p>Хочешь работать в свободном графике</p>
+      </article>
+      <article class="card fit-card">
+        <span class="num">03</span>
+        <p>Хочешь увеличить свой заработок</p>
+      </article>
+      <article class="card fit-card">
+        <span class="num">04</span>
+        <p>Боишься начать и не знаешь, с чего</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= как проходит обучение ================= -->
+<section id="kak">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Как проходит обучение</p>
+      <h2>Шаг за шагом —<br><span class="accent">от теории к моделям</span></h2>
+    </div>
+
+    <div class="tl">
+      <article class="tl-item reveal">
+        <h3>Теория и постановка рук</h3>
+        <p>День 1 — изучение теории, обед, постановка рук и практические упражнения, отработка на манекене.</p>
+      </article>
+
+      <article class="tl-item reveal">
+        <h3>Первая модель</h3>
+        <p>День 2 — перед живой моделью вспоминаем все движения, постановку ресничек, выделение натуральной ресницы на манекене. Проверка домашнего задания по теории, разбор важных моментов. Дальше работа на модели.</p>
+      </article>
+
+      <article class="tl-item reveal">
+        <h3>Практика под присмотром</h3>
+        <p>Последующие дни — проверка домашнего задания, разбираем все непонятные моменты, обед, отработки на моделях под моим присмотром.</p>
+      </article>
+
+      <article class="tl-item reveal">
+        <h3>Результат</h3>
+        <p>Выдача сертификата и подарки, обратная связь и рекомендации.</p>
+      </article>
+    </div>
+
+    <p class="reveal" style="margin:0"><span class="note-line">Все материалы и инструменты на время обучения предоставляются</span></p>
+  </div>
+</section>
+
+<!-- ================= как это выглядит ================= -->
+<section id="kak-vyglyadit">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Атмосфера</p>
+      <h2>Как это <span class="accent">выглядит</span></h2>
+    </div>
+
+    <div class="grid shots-grid" data-stagger>
+      <button type="button" class="shot" data-zoom="img/process-1.jpg" data-zoom-alt="Обучение наращиванию ресниц в студии LASHES DIVA, фото 1">
+        <img src="img/process-1.jpg" width="420" height="628" loading="lazy" alt="Обучение наращиванию ресниц в студии LASHES DIVA, фото 1">
+      </button>
+      <button type="button" class="shot" data-zoom="img/process-2.jpg" data-zoom-alt="Обучение наращиванию ресниц в студии LASHES DIVA, фото 2">
+        <img src="img/process-2.jpg" width="416" height="616" loading="lazy" alt="Обучение наращиванию ресниц в студии LASHES DIVA, фото 2">
+      </button>
+      <button type="button" class="shot" data-zoom="img/process-3.jpg" data-zoom-alt="Обучение наращиванию ресниц в студии LASHES DIVA, фото 3">
+        <img src="img/process-3.jpg" width="418" height="625" loading="lazy" alt="Обучение наращиванию ресниц в студии LASHES DIVA, фото 3">
+      </button>
+      <button type="button" class="shot" data-zoom="img/process-4.jpg" data-zoom-alt="Обучение наращиванию ресниц в студии LASHES DIVA, фото 4">
+        <img src="img/process-4.jpg" width="418" height="616" loading="lazy" alt="Обучение наращиванию ресниц в студии LASHES DIVA, фото 4">
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= чему научишься ================= -->
+<section id="nauchishsya">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Программа</p>
+      <h2>Чему ты <span class="accent">научишься</span></h2>
+    </div>
+
+    <ul class="grid skills" data-stagger>
+      <li>Подбирать эффект под форму глаз</li>
+      <li>Работать с густотой, направлением и ростом ресниц</li>
+      <li>Понимать схему, толщины, изгибы, длины и работу с клеем</li>
+      <li>Разбираться в составах: что действительно рабочее и для чего нужно</li>
+      <li>Делать красивое, аккуратное и носибельное наращивание</li>
+      <li>Проводить грамотную консультацию клиента</li>
+      <li>Видеть нюансы и не допускать ошибок</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= не только про ресницы ================= -->
+<section id="bonus">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Не только про ресницы</p>
+      <h2>Что ещё <span class="accent">входит в курс</span></h2>
+    </div>
+
+    <ul class="grid incl" data-stagger>
+      <li>
+        <span class="check" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12.6l5 5L20 6.6"/></svg></span>
+        Онлайн-курс по созданию портфолио: фото и видео, ракурсы, как показать результат до и после
+      </li>
+      <li>
+        <span class="check" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12.6l5 5L20 6.6"/></svg></span>
+        Оформление рабочей страницы и о чём писать в блоге
+      </li>
+      <li>
+        <span class="check" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12.6l5 5L20 6.6"/></svg></span>
+        Как собирать обратную связь от клиентов
+      </li>
+      <li>
+        <span class="check" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12.6l5 5L20 6.6"/></svg></span>
+        Как работать с моделями и выстраивать сервис
+      </li>
+      <li>
+        <span class="check" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12.6l5 5L20 6.6"/></svg></span>
+        Как начать принимать клиентов и ставить цену
+      </li>
+      <li>
+        <span class="check" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12.6l5 5L20 6.6"/></svg></span>
+        Ценообразование без низких прайсов
+      </li>
+      <li>
+        <span class="check" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12.6l5 5L20 6.6"/></svg></span>
+        Индивидуальный план дальнейшего развития
+      </li>
+      <li>
+        <span class="check" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12.6l5 5L20 6.6"/></svg></span>
+        Возможность работать в студии после обучения
+      </li>
+    </ul>
+
+    <p class="cta-row reveal">
+      <a class="btn btn--pulse btn--wide" href="#zapis">Записаться на курс</a>
+    </p>
+  </div>
+</section>
+
+<!-- ================= тарифы ================= -->
+<section id="tarify">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Стоимость</p>
+      <h2>Два <span class="accent">тарифа</span></h2>
+    </div>
+
+    <div class="grid tariffs" data-stagger>
+      <article class="card tariff">
+        <h3>Базовый</h3>
+        <span class="tariff-price">25&nbsp;000&nbsp;₽</span>
+        <p class="tariff-note">Полное освоение профессии с нуля</p>
+      </article>
+
+      <article class="card tariff">
+        <h3>Расширенный</h3>
+        <span class="tariff-price tariff-price--ask">Цена по запросу</span>
+        <p class="tariff-note">Подойдёт тем, кто хочет:</p>
+        <ul class="tariff-list">
+          <li>Более углублённую практику и продвижение</li>
+          <li>Максимум практики</li>
+          <li>Освоить объёмное наращивание</li>
+          <li>Получать поддержку во время и после курса</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= отзыв ================= -->
+<section id="otzyv">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Отзыв</p>
+      <h2>Отзыв <span class="accent">выпускницы</span></h2>
+    </div>
+
+    <figure class="rev-solo reveal">
+      <span class="rev-mark" aria-hidden="true">«</span>
+      <blockquote class="rev-quote">
+        <p>Благодарю за такое чудесное и позитивное обучение! Я уже проходила обучение наращиванию, но не стала работать, так как обучение было всего 1 день. А здесь это просто пушка-бомба. 3 дня пролетели незаметно, но каждый день я ждала этого обучения, чтобы скорее навести красоту и поставить руку, и смело принимать своих любимых клиентов. Марина, я благодарю тебя за приятную атмосферу, за развёрнутую теорию и огромнейшую практику. Ты преподаватель от Бога.</p>
+      </blockquote>
+      <figcaption class="rev-author">
+        <span class="rev-name">Марина Никитина</span>
+        <span class="rev-course">Выпускница курса</span>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ================= работы учениц ================= -->
+<section id="raboty">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Портфолио</p>
+      <h2>Работы <span class="accent">учениц</span></h2>
+    </div>
+
+    <div class="grid works-grid" data-stagger>
+      <button type="button" class="work" data-zoom="img/works/work-1.png" data-zoom-alt="Работа ученицы студии LASHES DIVA — наращивание ресниц, фото 1">
+        <img src="img/works/work-1.png" width="414" height="752" loading="lazy" alt="Работа ученицы студии LASHES DIVA — наращивание ресниц, фото 1">
+      </button>
+      <button type="button" class="work" data-zoom="img/works/work-2.png" data-zoom-alt="Работа ученицы студии LASHES DIVA — наращивание ресниц, фото 2">
+        <img src="img/works/work-2.png" width="419" height="550" loading="lazy" alt="Работа ученицы студии LASHES DIVA — наращивание ресниц, фото 2">
+      </button>
+      <button type="button" class="work" data-zoom="img/works/work-3.png" data-zoom-alt="Работа ученицы студии LASHES DIVA — наращивание ресниц, фото 3">
+        <img src="img/works/work-3.png" width="422" height="513" loading="lazy" alt="Работа ученицы студии LASHES DIVA — наращивание ресниц, фото 3">
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= другие направления ================= -->
+<section id="kursy">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Обучение</p>
+      <h2>Другие <span class="accent">направления</span></h2>
+    </div>
+
+    <div class="grid courses" data-stagger>
+      <div class="course">
+        <span class="course-body"><span class="course-name">Повышение для LASH-мастеров</span></span>
+        <span class="course-price"><b>9&nbsp;990&nbsp;₽</b></span>
+      </div>
+      <div class="course">
+        <span class="course-body"><span class="course-name">Тест-драйв профессии</span></span>
+        <span class="course-price"><b>1&nbsp;000&nbsp;₽</b></span>
+      </div>
+      <div class="course">
+        <span class="course-body">
+          <span class="course-name">Ламинирование + ботокс ресниц</span>
+          <span class="course-note">Индивидуальное обучение, 2 дня</span>
+        </span>
+        <span class="course-price"><span class="ask">Цена по запросу</span></span>
+      </div>
+      <div class="course">
+        <span class="course-body"><span class="course-name">Ламинирование бровей</span></span>
+        <span class="course-price"><span class="ask">Цена по запросу</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= запись ================= -->
+<section id="zapis">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Запись</p>
+      <h2>Записаться<br><span class="accent">на обучение</span></h2>
+    </div>
+
+    <div class="zapis-cta reveal">
+      <a class="btn btn--pulse btn--half" href="https://vk.me/club138617053" target="_blank" rel="noopener noreferrer">Написать в сообщения</a>
+      <p class="tg-line"><a href="https://t.me/lashesdiva_love" target="_blank" rel="noopener noreferrer">Telegram-канал студии</a></p>
+    </div>
+
+    <p class="addr reveal">Адрес студии: <b>Ижевск, ул.&nbsp;Карла Маркса,&nbsp;2</b></p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="f-logo">LASHES DIVA</p>
+    <p class="f-meta">Ижевск, ул.&nbsp;Карла Маркса,&nbsp;2</p>
+  </div>
+</footer>
+
+<!-- ================= плавающая кнопка записи ================= -->
+<div class="fab" id="fab">
+  <a class="btn btn--wide" href="#zapis">Записаться на курс</a>
+</div>
+
+<!-- ================= лайтбокс ================= -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Просмотр изображения">
+  <button type="button" class="lb-close" id="lbClose" aria-label="Закрыть">
+    <svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <img id="lbImg" src="" alt="">
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---- разметка задержек внутри групп ---- */
+  var groups = document.querySelectorAll('[data-stagger]');
+  for (var g = 0; g < groups.length; g++) {
+    var kids = groups[g].children;
+    var max = parseInt(groups[g].getAttribute('data-stagger-max') || '10', 10);
+    for (var k = 0; k < kids.length; k++) {
+      kids[k].classList.add('reveal');
+      if (!reduced) kids[k].style.transitionDelay = (Math.min(k, max) * 80) + 'ms';
+    }
+  }
+
+  /* ---- появление при прокрутке ---- */
+  var targets = document.querySelectorAll('.reveal');
+  var timeline = document.querySelector('.tl');
+
+  if (!('IntersectionObserver' in window) || reduced) {
+    for (var t = 0; t < targets.length; t++) targets[t].classList.add('in');
+    if (timeline) timeline.classList.add('draw');
+  } else {
+    /* каждый элемент проявляется один раз и снимается с наблюдения */
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) {
+          e.target.classList.add('in');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -8% 0px' });
+
+    for (var i = 0; i < targets.length; i++) io.observe(targets[i]);
+
+    /* линия таймлайна прорисовывается, точки загораются следом */
+    if (timeline) {
+      var tlo = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) {
+            e.target.classList.add('draw');
+            tlo.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      tlo.observe(timeline);
+    }
+  }
+
+  /* ---- плавающая кнопка записи ---- */
+  var fab = document.getElementById('fab');
+
+  if (fab && 'IntersectionObserver' in window) {
+    var heroEl = document.querySelector('.hero');
+    /* прячем и над блоком записи, и над подвалом — иначе кнопка перекроет контакты */
+    var tail = [document.getElementById('zapis'), document.querySelector('footer')];
+    var heroPassed = false;
+    var tailShown = 0;
+
+    function syncFab() {
+      fab.classList.toggle('show', heroPassed && tailShown === 0);
+    }
+
+    if (heroEl) {
+      new IntersectionObserver(function (entries) {
+        heroPassed = !entries[0].isIntersecting;
+        syncFab();
+      }, { threshold: 0 }).observe(heroEl);
+    }
+
+    var tio = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        e.target.setAttribute('data-vis', e.isIntersecting ? '1' : '0');
+      });
+      tailShown = 0;
+      for (var n = 0; n < tail.length; n++) {
+        if (tail[n] && tail[n].getAttribute('data-vis') === '1') tailShown++;
+      }
+      syncFab();
+    }, { threshold: 0 });
+
+    for (var q = 0; q < tail.length; q++) {
+      if (tail[q]) tio.observe(tail[q]);
+    }
+  }
+
+  /* ---- лайтбокс ---- */
+  var lb = document.getElementById('lb');
+  var lbImg = document.getElementById('lbImg');
+  var lbClose = document.getElementById('lbClose');
+  var lastFocused = null;
+
+  function openLb(src, alt) {
+    lastFocused = document.activeElement;
+    lbImg.setAttribute('src', src);
+    lbImg.setAttribute('alt', alt || '');
+    lb.setAttribute('data-open', '1');
+    document.body.classList.add('lb-open');
+    lbClose.focus();
+  }
+
+  function closeLb() {
+    lb.removeAttribute('data-open');
+    document.body.classList.remove('lb-open');
+    lbImg.setAttribute('src', '');
+    if (lastFocused && lastFocused.focus) lastFocused.focus();
+  }
+
+  document.addEventListener('click', function (e) {
+    var trigger = e.target.closest ? e.target.closest('[data-zoom]') : null;
+    if (trigger) {
+      e.preventDefault();
+      openLb(trigger.getAttribute('data-zoom'), trigger.getAttribute('data-zoom-alt'));
+    }
+  });
+
+  lb.addEventListener('click', function (e) {
+    if (e.target === lb || e.target === lbClose || lbClose.contains(e.target)) closeLb();
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if ((e.key === 'Escape' || e.key === 'Esc') && lb.hasAttribute('data-open')) closeLb();
+  });
+})();
+</script>
+
+</body>
+</html>
